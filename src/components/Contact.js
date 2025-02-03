@@ -1,13 +1,5 @@
 // pages/contact.js
 export default function Contact() {
-  const style = {
-    marginTop:{
-      marginTop: '20px'
-    },
-    textBlack:{
-      color: 'black'
-    }
-  }
   return (
     <div>
       <h1>Contact Us</h1>
