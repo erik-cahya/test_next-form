@@ -1,8 +1,13 @@
 [build]
-  command = "npm run build"
-  functions = "netlify/functions"
-  publish = ".next"
+  command = "next build && next export"
+  publish = "out"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  
 [[redirects]]
   from = "/thank-you"
   to = "/thank-you"
